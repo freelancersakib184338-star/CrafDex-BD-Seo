@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrafDex BD - Multi-Key AI Stock & Video SEO Generator</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              400: '#38bdf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- UTIF.js: High performance client-side TIFF decoder for EPS TIFF previews -->
+  <script src="https://cdn.jsdelivr.net/npm/utif@3.1.0/UTIF.min.js"></script>
+  <!-- PDF.js: Render AI and PDF-compatible EPS files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    if (typeof pdfjsLib !== 'undefined') {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.75);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #475569;
+      border-radius: 9999px;
+    }
+    .btn-glow {
+      box-shadow: 0 0 25px -4px rgba(99, 102, 241, 0.6);
+    }
+    .btn-glow:hover {
+      box-shadow: 0 0 35px -2px rgba(168, 85, 247, 0.7);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col custom-scrollbar">
+
+  <!-- Top Navigation -->
+  <header class="border-b border-slate-800/90 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-2 flex items-center justify-between">
+      
+      <!-- Brand & Logo -->
+      <div class="flex items-center space-x-3.5">
+        <div class="h-11 flex items-center justify-center">
+          <img src="1.png" alt="CrafDex BD" onerror="this.onerror=null; this.src='logo.png'; this.classList.add('hidden'); document.getElementById('logoFallbackBadge').classList.remove('hidden');" class="h-10 w-auto object-contain max-w-[170px]" />
+          <div id="logoFallbackBadge" class="hidden flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+              <i class="fa-solid fa-pen-nib text-white text-lg"></i>
+            </div>
+            <div>
+              <span class="text-xl font-black bg-gradient-to-r from-cyan-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">CrafDex</span>
+              <span class="text-xs font-bold text-cyan-400 block -mt-1 tracking-widest text-center">BD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block pl-2 border-l border-slate-800">
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-bold uppercase tracking-wider">Multi-Key AI Stock SEO</span>
+          <p class="text-[11px] text-slate-400">Adobe Stock, Shutterstock, Freepik & Pond5</p>
+        </div>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="flex items-center space-x-3">
+        <button id="helpModalBtn" class="px-3.5 py-2 text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl border border-slate-700 flex items-center gap-2 transition shadow-sm">
+          <i class="fa-solid fa-book-open text-cyan-400"></i>
+          <span>Stock & Video SEO Guide</span>
+        </button>
+        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-bold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white rounded-xl shadow-md shadow-indigo-600/30 flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-key"></i>
+          <span>Get Free API Key</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- Supported File Formats Banner -->
+    <div class="glass-card rounded-2xl p-5 sm:p-6 border border-cyan-500/20 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-semibold mb-2">
+          <i class="fa-solid fa-layer-group text-cyan-400"></i> Multi-API Key Load Balancer & True EPS Vector Extractor Active
+        </div>
+        <h1 class="text-xl sm:text-2xl font-black text-white tracking-tight">
+          CrafDex BD - Multi-Key Stock & Video SEO
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl">
+          Supports <strong>Multiple Gemini API Keys (auto-rotation & no rate limits)</strong>, <strong>EPS & AI Real Vector Decoders</strong>, <strong>3-Frame Video Filmstrips</strong>, and <strong>Adobe Stock CSV Exports</strong>.
+        </p>
+      </div>
+
+      <!-- File Type Badges -->
+      <div class="flex flex-wrap gap-1.5 justify-center md:justify-end">
+        <span class="px-2.5 py-1 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[11px] font-extrabold rounded-lg flex items-center gap-1">
+          <i class="fa-solid fa-key"></i> Multi-Key Pool
+        </span>
+        <span class="px-2.5 py-1 bg-rose-500/20 border border-rose-500/40 text-rose-300 text-[11px] font-extrabold rounded-lg flex items-center gap-1">
+          <i class="fa-solid fa-film"></i> 4K Video
+        </span>
+        <span class="px-2.5 py-1 bg-amber-500/20 border border-amber-500/40 text-amber-300 text-[11px] font-extrabold rounded-lg">EPS Vector</span>
+        <span class="px-2.5 py-1 bg-purple-500/20 border border-purple-500/40 text-purple-300 text-[11px] font-extrabold rounded-lg">SVG</span>
+      </div>
+    </div>
+
+    <!-- Controls & Settings Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+      <!-- Card 1: Multi-Key Pool & Model -->
+      <div class="glass-card rounded-xl p-5 space-y-3.5">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-xs uppercase tracking-wider text-slate-300 flex items-center gap-2">
+            <i class="fa-solid fa-key text-cyan-400"></i> Multi-API Key Pool
+          </h3>
+          <span id="keyPoolBadge" class="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 font-semibold">0 Keys Active</span>
+        </div>
+
+        <div>
+          <textarea id="apiKeyInput" rows="2" placeholder="Paste one or multiple Gemini API Keys (separated by new line or comma)..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-cyan-500 transition font-mono custom-scrollbar"></textarea>
+          <p class="text-[10px] text-slate-400 mt-1">Add 2-5 free keys to process unlimited files without rate limits!</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[11px] font-medium text-slate-400 mb-1">AI Model</label>
+            <select id="geminiModel" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500">
+              <option value="gemini-3.6-flash" selected>Gemini 3.6 Flash</option>
+              <option value="gemini-3.1-flash-lite">Gemini 3.1 Flash Lite</option>
+              <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
+              <option value="gemini-1.5-flash">Gemini 1.5 Flash</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-medium text-slate-400 mb-1">Platform</label>
+            <select id="targetPlatform" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500">
+              <option value="adobestock" selected>Adobe Stock</option>
+              <option value="shutterstock">Shutterstock</option>
+              <option value="freepik">Freepik</option>
+              <option value="pond5">Pond5 / Envato</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="saveKeyBtn" class="w-full py-2 bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white text-xs font-bold rounded-lg transition shadow">
+          Save & Activate Key Pool
+        </button>
+      </div>
+
+      <!-- Card 2: Manual Word & Keyword Length Controls -->
+      <div class="glass-card rounded-xl p-5 space-y-4">
+        <h3 class="font-bold text-xs uppercase tracking-wider text-slate-300 flex items-center gap-2">
+          <i class="fa-solid fa-sliders text-cyan-400"></i> Title & Keyword Controls
+        </h3>
+
+        <!-- Title Word Count Slider -->
+        <div class="space-y-1">
+          <div class="flex justify-between items-center text-xs">
+            <span class="font-medium text-slate-300">Title Word Count:</span>
+            <span class="font-bold text-cyan-400 px-2 py-0.5 bg-cyan-500/10 rounded border border-cyan-500/30 text-[11px]" id="titleWordCountLabel">15 Words</span>
+          </div>
+          <input type="range" id="titleWordCountRange" min="5" max="30" value="15" class="w-full accent-cyan-500 cursor-pointer h-1.5 bg-slate-800 rounded-lg" />
+          <div class="flex justify-between text-[10px] text-slate-500">
+            <span>5 words (Short)</span>
+            <span>15 words (Top-Seller Standard)</span>
+            <span>30 words</span>
+          </div>
+        </div>
+
+        <!-- Keyword Count Slider -->
+        <div class="space-y-1">
+          <div class="flex justify-between items-center text-xs">
+            <span class="font-medium text-slate-300">Keywords (Tags) Count:</span>
+            <span class="font-bold text-cyan-400 px-2 py-0.5 bg-cyan-500/10 rounded border border-cyan-500/30 text-[11px]" id="tagCountLabel">35 Tags</span>
+          </div>
+          <input type="range" id="tagCountRange" min="15" max="49" value="35" class="w-full accent-cyan-500 cursor-pointer h-1.5 bg-slate-800 rounded-lg" />
+          <div class="flex justify-between text-[10px] text-slate-500">
+            <span>15 Tags</span>
+            <span>35 (Balanced)</span>
+            <span>49 (Max Adobe)</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-medium text-slate-400 mb-1">SEO Strategy Mode</label>
+          <select id="seoStrategy" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500">
+            <option value="balanced" selected>SEO Friendly (Balanced) - Genmator Style</option>
+            <option value="video_cinematic">Stock Video & Motion Graphics (Animation & 4K)</option>
+            <option value="icon_vector">Icon & Vector Specialist (Outline, Line Art, Glyphs)</option>
+            <option value="commercial">Commercial & Buyer-Intent (High Downloads)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Card 3: Modifiers & Custom Keywords -->
+      <div class="glass-card rounded-xl p-5 space-y-3">
+        <h3 class="font-bold text-xs uppercase tracking-wider text-slate-300 flex items-center gap-2">
+          <i class="fa-solid fa-tags text-cyan-400"></i> Modifiers & Custom Keywords
+        </h3>
+
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <label class="flex items-center gap-2 p-2 bg-slate-900/60 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer">
+            <input type="checkbox" id="modWhiteBg" class="rounded bg-slate-950 border-slate-700 text-cyan-600 focus:ring-0" />
+            <span class="text-[11px] text-slate-300">White Background</span>
+          </label>
+          <label class="flex items-center gap-2 p-2 bg-slate-900/60 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer">
+            <input type="checkbox" id="modTransparent" class="rounded bg-slate-950 border-slate-700 text-cyan-600 focus:ring-0" />
+            <span class="text-[11px] text-slate-300">Transparent BG</span>
+          </label>
+          <label class="flex items-center gap-2 p-2 bg-slate-900/60 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer">
+            <input type="checkbox" id="modIconSet" class="rounded bg-slate-950 border-slate-700 text-cyan-600 focus:ring-0" />
+            <span class="text-[11px] text-slate-300">Line Art / Icon</span>
+          </label>
+          <label class="flex items-center gap-2 p-2 bg-slate-900/60 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer">
+            <input type="checkbox" id="modVector" class="rounded bg-slate-950 border-slate-700 text-cyan-600 focus:ring-0" />
+            <span class="text-[11px] text-slate-300">Vector Illustration</span>
+          </label>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-medium text-slate-400 mb-1">Custom Keywords (Comma separated)</label>
+          <input type="text" id="customKeywordsInput" placeholder="e.g. checkbox animation, country map, ui icon" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Media Upload Workspace -->
+    <div class="glass-card rounded-2xl p-5 sm:p-7 border border-slate-800 shadow-2xl space-y-6">
+      
+      <!-- Workspace Header with Giant Generate Button -->
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+        <div>
+          <h2 class="text-xl font-black text-white flex items-center gap-2.5">
+            <i class="fa-solid fa-photo-film text-cyan-400"></i> Media Workspace
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">
+            Upload Video Clips (MP4, MOV), Vectors (EPS, AI, SVG) or Images. Drop matching JPGs alongside EPS files to auto-pair previews.
+          </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-3">
+          <button id="clearAllBtn" class="px-4 py-3 text-xs font-semibold text-rose-400 hover:bg-rose-500/10 rounded-xl border border-rose-500/30 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-trash-can"></i> Clear All
+          </button>
+          
+          <button id="generateAllBtn" class="flex-grow lg:flex-grow-0 px-8 py-3.5 bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 hover:from-cyan-400 hover:via-indigo-500 hover:to-purple-500 text-white text-sm sm:text-base font-extrabold rounded-xl shadow-xl btn-glow transition-all flex items-center justify-center gap-3 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">
+            <i class="fa-solid fa-bolt text-yellow-300 text-lg"></i>
+            <span>Generate All Metadata</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Drag & Drop Zone -->
+      <div id="dropZone" class="border-2 border-dashed border-cyan-500/40 hover:border-cyan-400 bg-slate-900/50 hover:bg-cyan-950/20 rounded-2xl p-8 sm:p-10 text-center cursor-pointer transition flex flex-col items-center justify-center space-y-3 group">
+        <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 group-hover:bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-3xl shadow-inner transition">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <div>
+          <p class="text-base font-bold text-slate-200">Drag & Drop MP4, MOV, EPS, AI, SVG, PNG, JPG here, or <span class="text-cyan-400 underline">browse files</span></p>
+          <p class="text-xs text-slate-400 mt-1">Batch upload supported. EPS/AI files automatically extract embedded previews or use paired companion image previews.</p>
+        </div>
+        <input type="file" id="fileInput" multiple accept="image/*,video/mp4,video/quicktime,.eps,.ai,.svg" class="hidden" />
+      </div>
+
+      <!-- Batch Progress Bar -->
+      <div id="batchProgressBarContainer" class="hidden space-y-2 bg-slate-900/90 p-4 rounded-xl border border-cyan-500/30">
+        <div class="flex justify-between text-xs font-bold">
+          <span id="batchProgressText" class="text-cyan-300">Processing files... (0/0)</span>
+          <span id="batchProgressPercent" class="text-emerald-400 font-mono">0%</span>
+        </div>
+        <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+          <div id="batchProgressBar" class="bg-gradient-to-r from-cyan-500 via-indigo-500 to-emerald-400 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Global Export Toolbar -->
+      <div id="exportToolbar" class="hidden bg-slate-900/90 rounded-xl p-4 border border-slate-800 flex flex-wrap items-center justify-between gap-3">
+        <div class="text-xs font-semibold text-slate-300 flex items-center gap-3">
+          <span>Total Files: <strong class="text-cyan-400" id="totalItemsCount">0</strong></span>
+          <span>•</span>
+          <span>Completed: <strong class="text-emerald-400" id="completedItemsCount">0</strong></span>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5">
+          <button id="exportAdobeCsvBtn" class="px-4 py-2 text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg shadow-md flex items-center gap-2 transition">
+            <i class="fa-solid fa-file-csv text-base"></i> Export Adobe Stock CSV
+          </button>
+          <button id="exportShutterCsvBtn" class="px-4 py-2 text-xs font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-lg shadow-md flex items-center gap-2 transition">
+            <i class="fa-solid fa-file-csv text-base"></i> Export Shutterstock CSV
+          </button>
+          <button id="copyAllKeywordsBtn" class="px-3.5 py-2 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg border border-slate-700 flex items-center gap-1.5 transition">
+            <i class="fa-solid fa-copy"></i> Copy All Tags
+          </button>
+        </div>
+      </div>
+
+      <!-- File Cards List -->
+      <div id="filesListContainer" class="space-y-5"></div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="py-12 text-center text-slate-500 space-y-2">
+        <i class="fa-solid fa-layer-group text-4xl text-slate-700"></i>
+        <p class="text-sm">No files uploaded yet. Drag & drop video clips, vector icons or images above.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Guide Modal -->
+  <div id="guideModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto custom-scrollbar">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="text-base font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-crown text-yellow-400"></i> CrafDex BD - Stock & Video SEO Rules
+        </h3>
+        <button id="closeGuideModalBtn" class="text-slate-400 hover:text-white text-lg">&times;</button>
+      </div>
+      <div class="text-xs text-slate-300 space-y-3 leading-relaxed">
+        <div class="bg-emerald-950/40 border border-emerald-500/30 p-3.5 rounded-xl">
+          <h4 class="font-bold text-emerald-300 text-sm mb-1">🔑 Multi-API Key Pool (No Rate Limits)</h4>
+          <p>আপনার কাছে ২ বা তার বেশি Gemini API Key থাকলে সেগুলো কপি করে API বক্সে দিন (কমা বা নতুন লাইন দিয়ে)। অ্যাপ স্বয়ংক্রিয়ভাবে একটির পর একটি কী ঘুরিয়ে ব্যবহার করবে, ফলে কোনো কোটা বা রেট লিমিটের এরর আসবে না।</p>
+        </div>
+
+        <div class="bg-amber-950/40 border border-amber-500/30 p-3.5 rounded-xl">
+          <h4 class="font-bold text-amber-300 text-sm mb-1">📐 EPS / AI ভেক্টর ফাইল ব্যবহারের সেরা নিয়ম</h4>
+          <p>EPS ফাইলের ভেতরে থাকা আসল TIFF প্রিভিউ বা থাম্বনেইল এখন স্বয়ংক্রিয়ভাবে ডিকোড হয়ে প্রিভিউ শো করবে। এছাড়াও প্রয়োজন হলে সাথে আপনার বানানো প্রিভিউ JPG/PNG ফাইলটি একসাথে ড্র্যাগ অ্যান্ড ড্রপ করলেই অ্যাপ স্বয়ংক্রিয়ভাবে পেয়ার করে নেবে।</p>
+        </div>
+
+        <div class="bg-rose-950/40 border border-rose-500/30 p-3.5 rounded-xl">
+          <h4 class="font-bold text-rose-300 text-sm mb-1">🎬 Video Stock SEO (3-Frame Filmstrip)</h4>
+          <p>ভিডিও ফুটেজের ক্ষেত্রে শুরু, মধ্যম ও শেষ—এই ৩টি ফ্রেমের মোশন সিকোয়েন্স অ্যানালাইসিস করে এআই টাইটেল ও ডেসক্রিপশন তৈরি করে।</p>
+        </div>
+      </div>
+      <div class="pt-3 border-t border-slate-800 text-right">
+        <button id="gotItBtn" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-lg transition">
+          Got it!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-5 text-center text-xs text-slate-500">
+    <p>CrafDex BD &copy; 2026. Multi-Key Microstock & Video SEO Automation Platform.</p>
+  </footer>
+
+  <!-- App Script -->
+  <script>
+    function extractBase64String(dataUrl) {
+      if (typeof dataUrl !== 'string') return '';
+      const commaIdx = dataUrl.indexOf(',');
+      return commaIdx !== -1 ? dataUrl.substring(commaIdx + 1) : dataUrl;
+    }
+
+    const savedKeys = JSON.parse(localStorage.getItem('gemini_api_keys') || '[]');
+    const state = {
+      apiKeys: Array.isArray(savedKeys) && savedKeys.length > 0 ? savedKeys : (localStorage.getItem('gemini_api_key') ? [localStorage.getItem('gemini_api_key')] : []),
+      currentKeyIndex: 0,
+      files: [],
+      isProcessing: false
+    };
+
+    const apiKeyInput = document.getElementById('apiKeyInput');
+    const saveKeyBtn = document.getElementById('saveKeyBtn');
+    const keyPoolBadge = document.getElementById('keyPoolBadge');
+    
+    const targetPlatform = document.getElementById('targetPlatform');
+    const geminiModel = document.getElementById('geminiModel');
+    const seoStrategy = document.getElementById('seoStrategy');
+    const titleWordCountRange = document.getElementById('titleWordCountRange');
+    const titleWordCountLabel = document.getElementById('titleWordCountLabel');
+    const tagCountRange = document.getElementById('tagCountRange');
+    const tagCountLabel = document.getElementById('tagCountLabel');
+    const customKeywordsInput = document.getElementById('customKeywordsInput');
+
+    const modTransparent = document.getElementById('modTransparent');
+    const modWhiteBg = document.getElementById('modWhiteBg');
+    const modVector = document.getElementById('modVector');
+    const modIconSet = document.getElementById('modIconSet');
+
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const filesListContainer = document.getElementById('filesListContainer');
+    const emptyState = document.getElementById('emptyState');
+    const clearAllBtn = document.getElementById('clearAllBtn');
+    const generateAllBtn = document.getElementById('generateAllBtn');
+    const exportToolbar = document.getElementById('exportToolbar');
+    const totalItemsCount = document.getElementById('totalItemsCount');
+    const completedItemsCount = document.getElementById('completedItemsCount');
+
+    const exportAdobeCsvBtn = document.getElementById('exportAdobeCsvBtn');
+    const exportShutterCsvBtn = document.getElementById('exportShutterCsvBtn');
+    const copyAllKeywordsBtn = document.getElementById('copyAllKeywordsBtn');
+
+    const guideModal = document.getElementById('guideModal');
+    const helpModalBtn = document.getElementById('helpModalBtn');
+    const closeGuideModalBtn = document.getElementById('closeGuideModalBtn');
+    const gotItBtn = document.getElementById('gotItBtn');
+
+    const batchProgressBarContainer = document.getElementById('batchProgressBarContainer');
+    const batchProgressBar = document.getElementById('batchProgressBar');
+    const batchProgressText = document.getElementById('batchProgressText');
+    const batchProgressPercent = document.getElementById('batchProgressPercent');
+
+    if (state.apiKeys.length > 0) {
+      apiKeyInput.value = state.apiKeys.join('\n');
+      updateKeyPoolBadge();
+    }
+
+    function parseInputKeys() {
+      const raw = apiKeyInput.value.trim();
+      if (!raw) return [];
+      return raw.split(/[\n,;]+/).map(k => k.trim()).filter(k => k.length > 10);
+    }
+
+    saveKeyBtn.addEventListener('click', () => {
+      const keys = parseInputKeys();
+      if (keys.length === 0) {
+        alert('Please enter at least one valid Gemini API Key.');
+        return;
+      }
+      state.apiKeys = keys;
+      state.currentKeyIndex = 0;
+      localStorage.setItem('gemini_api_keys', JSON.stringify(keys));
+      localStorage.setItem('gemini_api_key', keys[0]);
+      updateKeyPoolBadge();
+      showToast(`${keys.length} API Key(s) saved & active in pool!`);
+    });
+
+    function updateKeyPoolBadge() {
+      const count = state.apiKeys.length;
+      if (count > 0) {
+        keyPoolBadge.textContent = `${count} Key(s) Active`;
+        keyPoolBadge.className = 'text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-semibold';
+      } else {
+        keyPoolBadge.textContent = '0 Keys Active';
+        keyPoolBadge.className = 'text-[10px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 font-semibold';
+      }
+    }
+
+    titleWordCountRange.addEventListener('input', (e) => {
+      titleWordCountLabel.textContent = `${e.target.value} Words`;
+    });
+
+    tagCountRange.addEventListener('input', (e) => {
+      tagCountLabel.textContent = `${e.target.value} Tags`;
+    });
+
+    helpModalBtn.addEventListener('click', () => guideModal.classList.remove('hidden'));
+    closeGuideModalBtn.addEventListener('click', () => guideModal.classList.add('hidden'));
+    gotItBtn.addEventListener('click', () => guideModal.classList.add('hidden'));
+
+    dropZone.addEventListener('click', () => fileInput.click());
+    dropZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.classList.add('border-cyan-400', 'bg-cyan-950/40');
+    });
+    dropZone.addEventListener('dragleave', () => {
+      dropZone.classList.remove('border-cyan-400', 'bg-cyan-950/40');
+    });
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('border-cyan-400', 'bg-cyan-950/40');
+      if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        handleFiles(e.dataTransfer.files);
+      }
+    });
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files.length > 0) {
+        handleFiles(e.target.files);
+      }
+    });
+
+    async function handleFiles(fileList) {
+      const filesArray = Array.from(fileList);
+
+      const companionPreviews = {};
+      filesArray.forEach(file => {
+        const name = file.name.toLowerCase();
+        if (file.type.startsWith('image/') && !name.endsWith('.svg') && !name.endsWith('.eps') && !name.endsWith('.ai')) {
+          const rawBase = name.replace(/\.[^/.]+$/, "");
+          const cleanBase = rawBase.replace(/[-_ ]*(preview|thumb|thumbnail|prev)$/i, '');
+          companionPreviews[rawBase] = file;
+          companionPreviews[cleanBase] = file;
+        }
+      });
+
+      for (const file of filesArray) {
+        const id = 'file_' + Math.random().toString(36).substr(2, 9);
+        const fileName = file.name.toLowerCase();
+        const baseName = fileName.replace(/\.[^/.]+$/, "");
+        const isVideo = fileName.endsWith('.mp4') || fileName.endsWith('.mov') || file.type.startsWith('video/');
+        const isEpsOrAi = fileName.endsWith('.eps') || fileName.endsWith('.ai');
+
+        try {
+          let processedData = null;
+
+          if (isVideo) {
+            processedData = await extractVideoMultiFrames(file);
+          } else if (isEpsOrAi) {
+            if (companionPreviews[baseName]) {
+              processedData = await downscaleImageToJpeg(companionPreviews[baseName]);
+              processedData.hasVisualPreview = true;
+            } else {
+              processedData = await processEpsOrAiFile(file);
+            }
+          } else if (fileName.endsWith('.svg') || file.type === 'image/svg+xml') {
+            processedData = await processSvgFile(file);
+            processedData.hasVisualPreview = true;
+          } else if (file.type.startsWith('image/')) {
+            processedData = await downscaleImageToJpeg(file);
+            processedData.hasVisualPreview = true;
+          } else {
+            processedData = await processGenericFile(file);
+          }
+
+          state.files.push({
+            id,
+            file,
+            isVideo: isVideo,
+            isEpsOrAi: isEpsOrAi,
+            hasVisualPreview: Boolean(processedData.hasVisualPreview),
+            base64: String(processedData.base64 || ''),
+            mimeType: 'image/jpeg',
+            previewUrl: processedData.previewUrl || '',
+            extractedText: processedData.extractedText || '',
+            fileTypeBadge: getFileTypeBadge(fileName, isVideo),
+            title: '',
+            description: '',
+            keywords: [],
+            category: isVideo ? '19' : '8',
+            status: 'ready',
+            errorMsg: ''
+          });
+
+          renderFiles();
+        } catch (err) {
+          console.error("Error processing file:", file.name, err);
+          state.files.push({
+            id,
+            file,
+            isVideo: isVideo,
+            isEpsOrAi: isEpsOrAi,
+            hasVisualPreview: false,
+            base64: '',
+            mimeType: 'image/jpeg',
+            previewUrl: '',
+            extractedText: file.name,
+            fileTypeBadge: getFileTypeBadge(fileName, isVideo),
+            title: '',
+            description: '',
+            keywords: [],
+            category: '8',
+            status: 'error',
+            errorMsg: err.message || 'File read error'
+          });
+          renderFiles();
+        }
+      }
+      fileInput.value = '';
+    }
+
+    function getFileTypeBadge(name, isVideo) {
+      if (isVideo || name.endsWith('.mp4') || name.endsWith('.mov')) return '<span class="px-2 py-0.5 text-[10px] font-extrabold bg-rose-500/20 text-rose-300 border border-rose-500/40 rounded flex items-center gap-1"><i class="fa-solid fa-video"></i> VIDEO</span>';
+      if (name.endsWith('.eps')) return '<span class="px-1.5 py-0.5 text-[9px] font-extrabold bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded">EPS VECTOR</span>';
+      if (name.endsWith('.ai')) return '<span class="px-1.5 py-0.5 text-[9px] font-extrabold bg-orange-500/20 text-orange-300 border border-orange-500/30 rounded">AI</span>';
+      if (name.endsWith('.svg')) return '<span class="px-1.5 py-0.5 text-[9px] font-extrabold bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded">SVG</span>';
+      return '<span class="px-1.5 py-0.5 text-[9px] font-extrabold bg-blue-500/20 text-blue-300 border border-blue-500/30 rounded">IMAGE</span>';
+    }
+
+    function extractVideoMultiFrames(file) {
+      return new Promise((resolve, reject) => {
+        const video = document.createElement('video');
+        video.preload = 'auto';
+        video.muted = true;
+        video.playsInline = true;
+        const url = URL.createObjectURL(file);
+        video.src = url;
+
+        video.onloadedmetadata = async () => {
+          const duration = video.duration || 3.0;
+          const t1 = Math.max(0.2, duration * 0.2);
+          const t2 = duration * 0.5;
+          const t3 = Math.max(0.5, duration * 0.85);
+
+          const vw = video.videoWidth || 640;
+          const vh = video.videoHeight || 360;
+
+          const captureFrameAt = (t) => {
+            return new Promise((res) => {
+              video.currentTime = t;
+              video.onseeked = () => {
+                const singleCanvas = document.createElement('canvas');
+                singleCanvas.width = 400;
+                singleCanvas.height = Math.round(400 * (vh / vw));
+                const sctx = singleCanvas.getContext('2d');
+                sctx.drawImage(video, 0, 0, singleCanvas.width, singleCanvas.height);
+                res(singleCanvas);
+              };
+            });
+          };
+
+          try {
+            const frame1 = await captureFrameAt(t1);
+            const frame2 = await captureFrameAt(t2);
+            const frame3 = await captureFrameAt(t3);
+
+            const frameW = frame1.width;
+            const frameH = frame1.height;
+            const compositeCanvas = document.createElement('canvas');
+            compositeCanvas.width = frameW * 3;
+            compositeCanvas.height = frameH + 30;
+            const ctx = compositeCanvas.getContext('2d');
+            
+            ctx.fillStyle = '#0f172a';
+            ctx.fillRect(0, 0, compositeCanvas.width, compositeCanvas.height);
+
+            ctx.drawImage(frame1, 0, 30);
+            ctx.drawImage(frame2, frameW, 30);
+            ctx.drawImage(frame3, frameW * 2, 30);
+
+            ctx.fillStyle = '#38bdf8';
+            ctx.font = 'bold 16px sans-serif';
+            ctx.fillText('FRAME 1 (START: 20%)', 20, 22);
+            ctx.fillText('FRAME 2 (ACTION/MID: 50%)', frameW + 20, 22);
+            ctx.fillText('FRAME 3 (CLIMAX/END: 85%)', frameW * 2 + 20, 22);
+
+            const compositeDataUrl = compositeCanvas.toDataURL('image/jpeg', 0.85);
+            const previewDataUrl = frame2.toDataURL('image/jpeg', 0.85);
+
+            URL.revokeObjectURL(url);
+            resolve({
+              hasVisualPreview: true,
+              previewUrl: previewDataUrl,
+              base64: extractBase64String(compositeDataUrl),
+              mimeType: 'image/jpeg'
+            });
+          } catch (e) {
+            URL.revokeObjectURL(url);
+            reject(e);
+          }
+        };
+
+        video.onerror = () => {
+          URL.revokeObjectURL(url);
+          reject(new Error('Video format not supported by browser'));
+        };
+      });
+    }
+
+    // ========================================================
+    // ADVANCED MULTI-ENGINE EPS & AI VECTOR PREVIEW DECODER
+    // ========================================================
+    async function processEpsOrAiFile(file) {
+      const buffer = await file.arrayBuffer();
+      const bytes = new Uint8Array(buffer);
+      const fileLen = bytes.length;
+
+      // Extract text content for metadata cues & XMP
+      const textChunk = new TextDecoder('latin1').decode(bytes.subarray(0, Math.min(fileLen, 4000000)));
+      const extractedCues = extractVectorMetadataCues(textChunk, file.name);
+
+      // --- Tier 1: Adobe XMP Embedded Full-Color Thumbnail (<xmpGImg:image> / <image>) ---
+      // In Adobe Illustrator, XMP thumbnail is a rich 24-bit full-color JPEG!
+      const xmpThumbBase64 = extractXmpThumbnail(textChunk);
+      if (xmpThumbBase64) {
+        const res = await loadImageFromDataUrl('data:image/jpeg;base64,' + xmpThumbBase64);
+        if (res) {
+          return {
+            hasVisualPreview: true,
+            previewUrl: res.previewUrl,
+            base64: res.base64,
+            mimeType: 'image/jpeg',
+            extractedText: extractedCues
+          };
+        }
+      }
+
+      // --- Tier 2: DOS EPS Binary Header (TIFF or JPEG preview) ---
+      if (fileLen >= 30) {
+        const isDosLE = (bytes[0] === 0xC5 && bytes[1] === 0xD0 && bytes[2] === 0xD3 && bytes[3] === 0xC6);
+        const isDosBE = (bytes[0] === 0xC6 && bytes[1] === 0xD3 && bytes[2] === 0xD0 && bytes[3] === 0xC5);
+        if (isDosLE || isDosBE) {
+          const view = new DataView(buffer);
+          const littleEndian = isDosLE;
+          const tiffOffset = view.getUint32(20, littleEndian);
+          const tiffLen = view.getUint32(24, littleEndian);
+          if (tiffLen > 0 && tiffOffset + tiffLen <= fileLen) {
+            const tiffBytes = bytes.subarray(tiffOffset, tiffOffset + tiffLen);
+
+            // Raw JPEG inside DOS EPS preview
+            if (tiffBytes[0] === 0xFF && tiffBytes[1] === 0xD8) {
+              const res = await loadBytesAsImage(tiffBytes, 'image/jpeg');
+              if (res) {
+                return {
+                  hasVisualPreview: true,
+                  previewUrl: res.previewUrl,
+                  base64: res.base64,
+                  mimeType: 'image/jpeg',
+                  extractedText: extractedCues
+                };
+              }
+            }
+
+            // Real TIFF preview ('II*' or 'MM*')
+            if ((tiffBytes[0] === 0x49 && tiffBytes[1] === 0x49) || (tiffBytes[0] === 0x4D && tiffBytes[1] === 0x4D)) {
+              const res = await decodeTiffBytes(tiffBytes);
+              if (res) {
+                return {
+                  hasVisualPreview: true,
+                  previewUrl: res.previewUrl,
+                  base64: res.base64,
+                  mimeType: 'image/jpeg',
+                  extractedText: extractedCues
+                };
+              }
+            }
+          }
+        }
+      }
+
+      // --- Tier 3: Raw Embedded JPEG Stream Scanner ---
+      const jpegRes = await scanAndExtractEmbeddedJpeg(bytes);
+      if (jpegRes) {
+        return {
+          hasVisualPreview: true,
+          previewUrl: jpegRes.previewUrl,
+          base64: jpegRes.base64,
+          mimeType: 'image/jpeg',
+          extractedText: extractedCues
+        };
+      }
+
+      // --- Tier 4: EPSI ASCII/Hex Preview (%%BeginPreview: ... %%EndPreview) ---
+      const epsiDataUrl = parseEpsiPreview(textChunk);
+      if (epsiDataUrl) {
+        const res = await loadImageFromDataUrl(epsiDataUrl);
+        if (res) {
+          return {
+            hasVisualPreview: true,
+            previewUrl: res.previewUrl,
+            base64: res.base64,
+            mimeType: 'image/jpeg',
+            extractedText: extractedCues
+          };
+        }
+      }
+
+      // --- Tier 5: PDF.js Rendering for AI / PDF-compatible EPS ---
+      if (textChunk.includes('%PDF-') || hasPdfHeader(bytes)) {
+        const pdfRes = await renderPdfBuffer(buffer);
+        if (pdfRes) {
+          return {
+            hasVisualPreview: true,
+            previewUrl: pdfRes.previewUrl,
+            base64: pdfRes.base64,
+            mimeType: 'image/jpeg',
+            extractedText: extractedCues
+          };
+        }
+      }
+
+      // --- Tier 6: PostScript Vector Path Parser & Canvas Renderer ---
+      const psVectorRes = renderPostscriptVector(textChunk);
+      if (psVectorRes) {
+        return {
+          hasVisualPreview: true,
+          previewUrl: psVectorRes.previewUrl,
+          base64: psVectorRes.base64,
+          mimeType: 'image/jpeg',
+          extractedText: extractedCues
+        };
+      }
+
+      // Fallback
+      return {
+        hasVisualPreview: false,
+        previewUrl: '',
+        base64: '',
+        mimeType: 'image/jpeg',
+        extractedText: extractedCues
+      };
+    }
+
+    function hasPdfHeader(bytes) {
+      const len = Math.min(bytes.length - 4, 2048);
+      for (let i = 0; i < len; i++) {
+        if (bytes[i] === 0x25 && bytes[i+1] === 0x50 && bytes[i+2] === 0x44 && bytes[i+3] === 0x46) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    async function decodeTiffBytes(tiffBytes) {
+      // 1. Try UTIF.js if available
+      if (typeof UTIF !== 'undefined' && UTIF.decode) {
+        try {
+          const tiffBuf = tiffBytes.buffer.slice(tiffBytes.byteOffset, tiffBytes.byteOffset + tiffBytes.byteLength);
+          const ifds = UTIF.decode(tiffBuf);
+          if (ifds && ifds.length > 0) {
+            const ifd = ifds[0];
+            UTIF.decodeImage(tiffBuf, ifd);
+            const rgba = UTIF.toRGBA8(ifd);
+            if (rgba && ifd.width > 0 && ifd.height > 0) {
+              const canvas = document.createElement('canvas');
+              canvas.width = ifd.width;
+              canvas.height = ifd.height;
+              const ctx = canvas.getContext('2d');
+              const imgData = ctx.createImageData(ifd.width, ifd.height);
+              imgData.data.set(rgba);
+              ctx.putImageData(imgData, 0, 0);
+              return renderCanvasToJpeg(canvas);
+            }
+          }
+        } catch (e) {
+          console.warn("UTIF decode error, trying fallback:", e);
+        }
+      }
+
+      // 2. Built-in Fallback TIFF Decoder with exact Row-Stride (supports 1-bit B&W, 4-bit, 8-bit Palette & 24-bit RGB)
+      try {
+        return decodeMiniTiffFallback(tiffBytes);
+      } catch (err) {
+        console.warn("Mini TIFF decoder failed:", err);
+      }
+      return null;
+    }
+
+    function decodeMiniTiffFallback(bytes) {
+      if (bytes.length < 8) return null;
+      const isLE = bytes[0] === 0x49 && bytes[1] === 0x49;
+      const isBE = bytes[0] === 0x4D && bytes[1] === 0x4D;
+      if (!isLE && !isBE) return null;
+
+      const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+      const magic = view.getUint16(2, isLE);
+      if (magic !== 42) return null;
+
+      const ifdOffset = view.getUint32(4, isLE);
+      if (ifdOffset >= bytes.length) return null;
+
+      const numEntries = view.getUint16(ifdOffset, isLE);
+      const tags = {};
+      let pos = ifdOffset + 2;
+
+      for (let i = 0; i < numEntries; i++) {
+        if (pos + 12 > bytes.length) break;
+        const tag = view.getUint16(pos, isLE);
+        const type = view.getUint16(pos + 2, isLE);
+        const count = view.getUint32(pos + 4, isLE);
+        let val = 0;
+        if (type === 3 && count === 1) {
+          val = view.getUint16(pos + 8, isLE);
+        } else {
+          val = view.getUint32(pos + 8, isLE);
+        }
+        tags[tag] = { type, count, val };
+        pos += 12;
+      }
+
+      const width = tags[256] ? tags[256].val : 0;
+      const height = tags[257] ? tags[257].val : 0;
+      const bitDepth = tags[258] ? (tags[258].type === 3 ? tags[258].val : 1) : 1;
+      const compression = tags[259] ? tags[259].val : 1;
+      const photometric = tags[262] ? tags[262].val : 1;
+      const samplesPerPixel = tags[277] ? tags[277].val : 1;
+
+      if (!width || !height || width > 5000 || height > 5000) return null;
+
+      function getArray(tagId) {
+        const e = tags[tagId];
+        if (!e) return [];
+        if (e.count === 1) return [e.val];
+        const res = [];
+        const off = e.val;
+        for (let j = 0; j < e.count; j++) {
+          if (e.type === 3) {
+            if (off + j * 2 + 2 <= bytes.length) res.push(view.getUint16(off + j * 2, isLE));
+          } else {
+            if (off + j * 4 + 4 <= bytes.length) res.push(view.getUint32(off + j * 4, isLE));
+          }
+        }
+        return res;
+      }
+
+      const stripOffsets = getArray(273);
+      const stripCounts = getArray(279);
+      if (stripOffsets.length === 0) return null;
+
+      let pixelBytes = new Uint8Array(0);
+      for (let s = 0; s < stripOffsets.length; s++) {
+        const sOff = stripOffsets[s];
+        const sLen = stripCounts[s] || (bytes.length - sOff);
+        if (sOff + sLen > bytes.length) continue;
+        const rawSlice = bytes.subarray(sOff, sOff + sLen);
+        if (compression === 32773) {
+          const unpacked = unpackBits(rawSlice);
+          const combined = new Uint8Array(pixelBytes.length + unpacked.length);
+          combined.set(pixelBytes);
+          combined.set(unpacked, pixelBytes.length);
+          pixelBytes = combined;
+        } else {
+          const combined = new Uint8Array(pixelBytes.length + rawSlice.length);
+          combined.set(pixelBytes);
+          combined.set(rawSlice, pixelBytes.length);
+          pixelBytes = combined;
+        }
+      }
+
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      const imgData = ctx.createImageData(width, height);
+      const data = imgData.data;
+
+      // CASE 1: 1-Bit Monochrome (WhiteIsZero=0 or BlackIsZero=1)
+      if (bitDepth === 1 || (samplesPerPixel === 1 && (photometric === 0 || photometric === 1) && pixelBytes.length < width * height)) {
+        const bytesPerRow = Math.ceil(width / 8);
+        let dstIdx = 0;
+        for (let y = 0; y < height; y++) {
+          const rowStart = y * bytesPerRow;
+          for (let x = 0; x < width; x++) {
+            const byteIdx = rowStart + (x >> 3);
+            const bitIdx = 7 - (x & 7);
+            const byteVal = byteIdx < pixelBytes.length ? pixelBytes[byteIdx] : 0;
+            const bit = (byteVal >> bitIdx) & 1;
+            // Photometric 0 = WhiteIsZero (0=white, 1=black); Photometric 1 = BlackIsZero (0=black, 1=white)
+            const val = (photometric === 0) ? (bit ? 0 : 255) : (bit ? 255 : 0);
+            data[dstIdx] = val;
+            data[dstIdx + 1] = val;
+            data[dstIdx + 2] = val;
+            data[dstIdx + 3] = 255;
+            dstIdx += 4;
+          }
+        }
+      }
+      // CASE 2: 8-Bit Palette / ColorMap (Photometric 3)
+      else if (photometric === 3 || tags[320]) {
+        const colorMap = getArray(320);
+        const mapSize = 1 << Math.min(bitDepth, 8);
+        const bytesPerRow = width;
+        let dstIdx = 0;
+        for (let y = 0; y < height; y++) {
+          const rowStart = y * bytesPerRow;
+          for (let x = 0; x < width; x++) {
+            const byteIdx = rowStart + x;
+            const idx = byteIdx < pixelBytes.length ? pixelBytes[byteIdx] : 0;
+            if (colorMap.length >= mapSize * 3 && idx < mapSize) {
+              data[dstIdx] = (colorMap[idx] >> 8) & 255;
+              data[dstIdx + 1] = (colorMap[idx + mapSize] >> 8) & 255;
+              data[dstIdx + 2] = (colorMap[idx + mapSize * 2] >> 8) & 255;
+              data[dstIdx + 3] = 255;
+            } else {
+              data[dstIdx] = idx;
+              data[dstIdx + 1] = idx;
+              data[dstIdx + 2] = idx;
+              data[dstIdx + 3] = 255;
+            }
+            dstIdx += 4;
+          }
+        }
+      }
+      // CASE 3: 24-Bit RGB (Photometric 2)
+      else if (photometric === 2 || samplesPerPixel >= 3) {
+        const spp = samplesPerPixel || 3;
+        const bytesPerRow = width * spp;
+        let dstIdx = 0;
+        for (let y = 0; y < height; y++) {
+          const rowStart = y * bytesPerRow;
+          for (let x = 0; x < width; x++) {
+            const srcIdx = rowStart + x * spp;
+            if (srcIdx + 2 < pixelBytes.length) {
+              data[dstIdx] = pixelBytes[srcIdx];
+              data[dstIdx + 1] = pixelBytes[srcIdx + 1];
+              data[dstIdx + 2] = pixelBytes[srcIdx + 2];
+              data[dstIdx + 3] = 255;
+            } else {
+              data[dstIdx] = 255;
+              data[dstIdx + 1] = 255;
+              data[dstIdx + 2] = 255;
+              data[dstIdx + 3] = 255;
+            }
+            dstIdx += 4;
+          }
+        }
+      }
+      // CASE 4: 8-Bit Grayscale
+      else {
+        const bytesPerRow = width;
+        let dstIdx = 0;
+        for (let y = 0; y < height; y++) {
+          const rowStart = y * bytesPerRow;
+          for (let x = 0; x < width; x++) {
+            const byteIdx = rowStart + x;
+            const val = byteIdx < pixelBytes.length ? pixelBytes[byteIdx] : 255;
+            data[dstIdx] = val;
+            data[dstIdx + 1] = val;
+            data[dstIdx + 2] = val;
+            data[dstIdx + 3] = 255;
+            dstIdx += 4;
+          }
+        }
+      }
+
+      ctx.putImageData(imgData, 0, 0);
+      return renderCanvasToJpeg(canvas);
+    }
+
+    function unpackBits(data) {
+      const out = [];
+      let i = 0;
+      const len = data.length;
+      while (i < len) {
+        let n = data[i++];
+        if (n <= 127) {
+          for (let j = 0; j <= n && i < len; j++) out.push(data[i++]);
+        } else if (n > 128) {
+          const b = data[i++];
+          const count = 257 - n;
+          for (let j = 0; j < count; j++) out.push(b);
+        }
+      }
+      return new Uint8Array(out);
+    }
+
+    function extractXmpThumbnail(text) {
+      const patterns = [
+        /<xmpGImg:image>([\s\S]*?)<\/xmpGImg:image>/i,
+        /<image>([A-Za-z0-9+/=\s]{100,})<\/image>/i,
+        /<photoshop:Thumbnail>([\s\S]*?)<\/photoshop:Thumbnail>/i
+      ];
+      for (const p of patterns) {
+        const m = text.match(p);
+        if (m && m[1]) {
+          const cleaned = m[1].replace(/\s+/g, '');
+          if (cleaned.length > 100) return cleaned;
+        }
+      }
+      return null;
+    }
+
+    function parseEpsiPreview(text) {
+      const m = text.match(/%%BeginPreview:\s*(\d+)\s+(\d+)\s+(\d+)\s+(\d+)/i);
+      if (!m) return null;
+      const width = parseInt(m[1], 10);
+      const height = parseInt(m[2], 10);
+      const depth = parseInt(m[3], 10);
+      const lines = parseInt(m[4], 10);
+      if (!width || !height || !lines) return null;
+
+      const endIdx = text.indexOf('%%EndPreview', m.index);
+      if (endIdx === -1) return null;
+
+      const previewChunk = text.substring(m.index + m[0].length, endIdx);
+      const hexLines = previewChunk.split('\n')
+        .map(l => l.replace(/^[%#\s]+/, '').trim())
+        .filter(l => l.length > 0);
+
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      const imgData = ctx.createImageData(width, height);
+      const data = imgData.data;
+      data.fill(255);
+
+      let pixelIndex = 0;
+      for (const line of hexLines) {
+        if (depth === 1) {
+          for (let i = 0; i < line.length; i += 2) {
+            const byte = parseInt(line.substr(i, 2), 16);
+            if (isNaN(byte)) continue;
+            for (let b = 7; b >= 0; b--) {
+              if (pixelIndex >= width * height) break;
+              const bit = (byte >> b) & 1;
+              const val = bit ? 0 : 255;
+              const off = pixelIndex * 4;
+              data[off] = val;
+              data[off + 1] = val;
+              data[off + 2] = val;
+              data[off + 3] = 255;
+              pixelIndex++;
+            }
+          }
+        } else if (depth === 8) {
+          for (let i = 0; i < line.length; i += 2) {
+            if (pixelIndex >= width * height) break;
+            const val = parseInt(line.substr(i, 2), 16);
+            const off = pixelIndex * 4;
+            data[off] = val;
+            data[off + 1] = val;
+            data[off + 2] = val;
+            data[off + 3] = 255;
+            pixelIndex++;
+          }
+        }
+      }
+      ctx.putImageData(imgData, 0, 0);
+      return canvas.toDataURL('image/jpeg', 0.88);
+    }
+
+    async function scanAndExtractEmbeddedJpeg(bytes) {
+      const fileLen = bytes.length;
+      for (let i = 0; i < fileLen - 100; i++) {
+        if (bytes[i] === 0xFF && bytes[i + 1] === 0xD8 && bytes[i + 2] === 0xFF) {
+          let jpegEnd = -1;
+          for (let j = i + 10; j < Math.min(fileLen - 1, i + 8000000); j++) {
+            if (bytes[j] === 0xFF && bytes[j + 1] === 0xD9) {
+              jpegEnd = j + 2;
+              break;
+            }
+          }
+          if (jpegEnd !== -1 && (jpegEnd - i) > 500) {
+            const slice = bytes.subarray(i, jpegEnd);
+            const res = await loadBytesAsImage(slice, 'image/jpeg');
+            if (res) return res;
+          }
+          i += 500;
+        }
+      }
+      return null;
+    }
+
+    async function renderPdfBuffer(arrayBuffer) {
+      if (typeof pdfjsLib === 'undefined') return null;
+      try {
+        const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+        const pdf = await loadingTask.promise;
+        if (pdf.numPages >= 1) {
+          const page = await pdf.getPage(1);
+          const viewport = page.getViewport({ scale: 1.0 });
+          let scale = 1.0;
+          const maxDim = 800;
+          if (viewport.width > maxDim || viewport.height > maxDim) {
+            scale = Math.min(maxDim / viewport.width, maxDim / viewport.height);
+          }
+          const scaledViewport = page.getViewport({ scale });
+          const canvas = document.createElement('canvas');
+          canvas.width = Math.round(scaledViewport.width);
+          canvas.height = Math.round(scaledViewport.height);
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
+          return renderCanvasToJpeg(canvas);
+        }
+      } catch (e) {
+        console.warn("PDF.js render error:", e);
+      }
+      return null;
+    }
+
+    function renderPostscriptVector(psText) {
+      try {
+        const bboxMatch = psText.match(/%%(?:HiRes)?BoundingBox:\s*([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)/i);
+        let llx = 0, lly = 0, urx = 800, ury = 800;
+        if (bboxMatch) {
+          llx = parseFloat(bboxMatch[1]);
+          lly = parseFloat(bboxMatch[2]);
+          urx = parseFloat(bboxMatch[3]);
+          ury = parseFloat(bboxMatch[4]);
+        }
+        const w = urx - llx;
+        const h = ury - lly;
+        if (w <= 0 || h <= 0 || isNaN(w) || isNaN(h)) return null;
+
+        const maxDim = 800;
+        const scale = Math.min(maxDim / w, maxDim / h);
+        const canvasW = Math.max(100, Math.round(w * scale));
+        const canvasH = Math.max(100, Math.round(h * scale));
+
+        const canvas = document.createElement('canvas');
+        canvas.width = canvasW;
+        canvas.height = canvasH;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvasW, canvasH);
+
+        const tx = (x) => (x - llx) * scale;
+        const ty = (y) => (ury - y) * scale;
+
+        // Clean comments
+        const cleanLines = psText.split('\n').filter(l => !l.startsWith('%%') && !l.startsWith('%!')).join(' ');
+        const tokens = cleanLines.match(/\([^\)]*\)|[^\s]+/g);
+        if (!tokens || tokens.length < 5) return null;
+
+        const stack = [];
+        ctx.beginPath();
+        let opsExecuted = 0;
+
+        for (let i = 0; i < Math.min(tokens.length, 30000); i++) {
+          const tok = tokens[i];
+          const num = Number(tok);
+          if (!isNaN(num)) {
+            stack.push(num);
+            continue;
+          }
+
+          if (tok === 'm' || tok === 'moveto') {
+            if (stack.length >= 2) {
+              const y = stack.pop(), x = stack.pop();
+              ctx.moveTo(tx(x), ty(y));
+              opsExecuted++;
+            }
+          } else if (tok === 'l' || tok === 'lineto') {
+            if (stack.length >= 2) {
+              const y = stack.pop(), x = stack.pop();
+              ctx.lineTo(tx(x), ty(y));
+              opsExecuted++;
+            }
+          } else if (tok === 'c' || tok === 'curveto') {
+            if (stack.length >= 6) {
+              const y3 = stack.pop(), x3 = stack.pop();
+              const y2 = stack.pop(), x2 = stack.pop();
+              const y1 = stack.pop(), x1 = stack.pop();
+              ctx.bezierCurveTo(tx(x1), ty(y1), tx(x2), ty(y2), tx(x3), ty(y3));
+              opsExecuted++;
+            }
+          } else if (tok === 're') {
+            if (stack.length >= 4) {
+              const rh = stack.pop(), rw = stack.pop(), ry = stack.pop(), rx = stack.pop();
+              ctx.rect(tx(rx), ty(ry + rh), rw * scale, rh * scale);
+              opsExecuted++;
+            }
+          } else if (tok === 'h' || tok === 'cp' || tok === 'closepath') {
+            ctx.closePath();
+          } else if (tok === 'f' || tok === 'F' || tok === 'fill' || tok === 'eofill' || tok === 'f*') {
+            ctx.fill();
+            ctx.beginPath();
+            opsExecuted++;
+          } else if (tok === 's' || tok === 'S' || tok === 'stroke') {
+            ctx.stroke();
+            ctx.beginPath();
+            opsExecuted++;
+          } else if (tok === 'b' || tok === 'B') {
+            ctx.fill();
+            ctx.stroke();
+            ctx.beginPath();
+            opsExecuted++;
+          } else if (tok === 'rg' || tok === 'RG') {
+            if (stack.length >= 3) {
+              const b = Math.round(stack.pop() * 255);
+              const g = Math.round(stack.pop() * 255);
+              const r = Math.round(stack.pop() * 255);
+              const col = `rgb(${r},${g},${b})`;
+              ctx.fillStyle = col;
+              ctx.strokeStyle = col;
+            }
+          } else if (tok === 'k' || tok === 'K') {
+            if (stack.length >= 4) {
+              const k = stack.pop(), y = stack.pop(), m = stack.pop(), c = stack.pop();
+              const r = Math.round(255 * (1 - c) * (1 - k));
+              const g = Math.round(255 * (1 - m) * (1 - k));
+              const b = Math.round(255 * (1 - y) * (1 - k));
+              const col = `rgb(${r},${g},${b})`;
+              ctx.fillStyle = col;
+              ctx.strokeStyle = col;
+            }
+          } else if (tok === 'g' || tok === 'G') {
+            if (stack.length >= 1) {
+              const val = Math.round(stack.pop() * 255);
+              const col = `rgb(${val},${val},${val})`;
+              ctx.fillStyle = col;
+              ctx.strokeStyle = col;
+            }
+          } else if (tok === 'w') {
+            if (stack.length >= 1) {
+              ctx.lineWidth = Math.max(0.5, stack.pop() * scale);
+            }
+          } else if (tok === 'q') {
+            ctx.save();
+          } else if (tok === 'Q') {
+            ctx.restore();
+          } else {
+            if (stack.length > 50) stack.shift();
+          }
+        }
+
+        if (opsExecuted > 2) {
+          return renderCanvasToJpeg(canvas);
+        }
+      } catch (err) {
+        console.warn("PostScript vector render error:", err);
+      }
+      return null;
+    }
+
+    function extractVectorMetadataCues(textChunk, fileName) {
+      let cues = [];
+      const cleanName = fileName.replace(/\.[^/.]+$/, "").replace(/[-_]/g, ' ');
+      cues.push(`File Base Name: "${cleanName}"`);
+
+      const titleMatch = textChunk.match(/%%Title:\s*([^\r\n]+)/i);
+      if (titleMatch && titleMatch[1].trim()) cues.push(`Title: "${titleMatch[1].trim()}"`);
+
+      const keywordsMatch = textChunk.match(/%%Keywords:\s*([^\r\n]+)/i);
+      if (keywordsMatch && keywordsMatch[1].trim()) cues.push(`Tags: "${keywordsMatch[1].trim()}"`);
+
+      const creatorMatch = textChunk.match(/%%Creator:\s*([^\r\n]+)/i);
+      if (creatorMatch && creatorMatch[1].trim()) cues.push(`Creator: "${creatorMatch[1].trim()}"`);
+
+      const colorsMatch = textChunk.match(/%%DocumentCustomColors:\s*([^\r\n]+)/i);
+      if (colorsMatch && colorsMatch[1].trim()) cues.push(`Colors: "${colorsMatch[1].trim()}"`);
+
+      // XMP Metadata
+      const dcTitle = textChunk.match(/<dc:title>[\s\S]*?<rdf:li[^>]*>([^<]+)<\/rdf:li>/i);
+      if (dcTitle && dcTitle[1].trim()) cues.push(`XMP Title: "${dcTitle[1].trim()}"`);
+
+      const dcDesc = textChunk.match(/<dc:description>[\s\S]*?<rdf:li[^>]*>([^<]+)<\/rdf:li>/i);
+      if (dcDesc && dcDesc[1].trim()) cues.push(`XMP Desc: "${dcDesc[1].trim()}"`);
+
+      // Illustrator Layer Names
+      const layers = [];
+      const layerMatches = textChunk.matchAll(/(?:%AI5_BeginLayer|%%BeginLayer:)[\s\S]*?\(([^)]+)\)\s*Ln/g);
+      for (const lm of layerMatches) {
+        if (lm[1] && !layers.includes(lm[1])) layers.push(lm[1].trim());
+      }
+      if (layers.length > 0) cues.push(`Layers: ${layers.slice(0, 8).join(', ')}`);
+
+      // Visible text in PostScript
+      const textMatches = textChunk.matchAll(/\(([^)]+)\)\s*(?:Tj|show)/g);
+      const words = [];
+      for (const tm of textMatches) {
+        const w = tm[1].trim();
+        if (w.length >= 2 && !words.includes(w) && !w.startsWith('%')) words.push(w);
+      }
+      if (words.length > 0) cues.push(`Drawn Text Strings: "${words.slice(0, 10).join(', ')}"`);
+
+      return cues.join(' | ');
+    }
+
+    function loadBytesAsImage(bytes, mimeType = 'image/jpeg') {
+      return new Promise((resolve) => {
+        try {
+          const blob = new Blob([bytes], { type: mimeType });
+          const url = URL.createObjectURL(blob);
+          const img = new Image();
+          img.onload = () => {
+            if (img.naturalWidth > 10 && img.naturalHeight > 10) {
+              const res = renderImgToCanvasJpeg(img);
+              URL.revokeObjectURL(url);
+              resolve(res);
+            } else {
+              URL.revokeObjectURL(url);
+              resolve(null);
+            }
+          };
+          img.onerror = () => {
+            URL.revokeObjectURL(url);
+            resolve(null);
+          };
+          img.src = url;
+        } catch (e) {
+          resolve(null);
+        }
+      });
+    }
+
+    function loadImageFromDataUrl(dataUrl) {
+      return new Promise((resolve) => {
+        try {
+          const img = new Image();
+          img.onload = () => {
+            if (img.naturalWidth > 10 && img.naturalHeight > 10) {
+              const res = renderImgToCanvasJpeg(img);
+              resolve(res);
+            } else {
+              resolve(null);
+            }
+          };
+          img.onerror = () => resolve(null);
+          img.src = dataUrl;
+        } catch (e) {
+          resolve(null);
+        }
+      });
+    }
+
+    function renderImgToCanvasJpeg(img) {
+      let w = img.naturalWidth || img.width || 800;
+      let h = img.naturalHeight || img.height || 800;
+      const maxDim = 1024;
+      if (w > maxDim || h > maxDim) {
+        const ratio = Math.min(maxDim / w, maxDim / h);
+        w = Math.round(w * ratio);
+        h = Math.round(h * ratio);
+      }
+      w = Math.max(w, 50);
+      h = Math.max(h, 50);
+
+      const canvas = document.createElement('canvas');
+      canvas.width = w;
+      canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, w, h);
+      ctx.drawImage(img, 0, 0, w, h);
+
+      return renderCanvasToJpeg(canvas);
+    }
+
+    function renderCanvasToJpeg(canvas) {
+      let w = canvas.width;
+      let h = canvas.height;
+      const maxDim = 1024;
+      if (w > maxDim || h > maxDim) {
+        const ratio = Math.min(maxDim / w, maxDim / h);
+        w = Math.round(w * ratio);
+        h = Math.round(h * ratio);
+        const scaledCanvas = document.createElement('canvas');
+        scaledCanvas.width = w;
+        scaledCanvas.height = h;
+        const sctx = scaledCanvas.getContext('2d');
+        sctx.fillStyle = '#ffffff';
+        sctx.fillRect(0, 0, w, h);
+        sctx.drawImage(canvas, 0, 0, w, h);
+        const jpegUrl = scaledCanvas.toDataURL('image/jpeg', 0.88);
+        return {
+          previewUrl: jpegUrl,
+          base64: extractBase64String(jpegUrl)
+        };
+      }
+
+      const jpegUrl = canvas.toDataURL('image/jpeg', 0.88);
+      return {
+        previewUrl: jpegUrl,
+        base64: extractBase64String(jpegUrl)
+      };
+    }
+
+    function attachPreviewToCard(fileId, inputEl) {
+      if (inputEl.files && inputEl.files[0]) {
+        const previewFile = inputEl.files[0];
+        const item = state.files.find(f => f.id === fileId);
+        if (!item) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.onload = () => {
+            const res = renderImgToCanvasJpeg(img);
+            item.previewUrl = res.previewUrl;
+            item.base64 = res.base64;
+            item.hasVisualPreview = true;
+            renderFiles();
+            showToast(`Preview image linked to ${item.file.name}!`);
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(previewFile);
+      }
+    }
+
+    function downscaleImageToJpeg(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.onload = () => {
+            const res = renderImgToCanvasJpeg(img);
+            resolve({
+              hasVisualPreview: true,
+              previewUrl: res.previewUrl,
+              base64: res.base64,
+              mimeType: 'image/jpeg'
+            });
+          };
+          img.onerror = () => reject(new Error('Failed to decode image'));
+          img.src = e.target.result;
+        };
+        reader.onerror = () => reject(new Error('Failed to read image file'));
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function processSvgFile(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const svgString = e.target.result;
+          const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+          const url = URL.createObjectURL(blob);
+          const img = new Image();
+          img.onload = () => {
+            const res = renderImgToCanvasJpeg(img);
+            URL.revokeObjectURL(url);
+            resolve({
+              hasVisualPreview: true,
+              previewUrl: res.previewUrl,
+              base64: res.base64,
+              mimeType: 'image/jpeg'
+            });
+          };
+          img.onerror = () => {
+            URL.revokeObjectURL(url);
+            resolve({
+              hasVisualPreview: false,
+              previewUrl: '',
+              base64: '',
+              mimeType: 'image/jpeg',
+              extractedText: file.name
+            });
+          };
+          img.src = url;
+        };
+        reader.readAsText(file);
+      });
+    }
+
+    function processGenericFile(file) {
+      return new Promise((resolve) => {
+        resolve({
+          hasVisualPreview: false,
+          previewUrl: '',
+          base64: '',
+          mimeType: 'image/jpeg',
+          extractedText: file.name
+        });
+      });
+    }
+
+    clearAllBtn.addEventListener('click', () => {
+      if (state.files.length === 0) return;
+      if (confirm('Remove all files from workspace?')) {
+        state.files.forEach(f => {
+          if (f.previewUrl && f.previewUrl.startsWith('blob:')) URL.revokeObjectURL(f.previewUrl);
+        });
+        state.files = [];
+        renderFiles();
+      }
+    });
+
+    function renderFiles() {
+      if (state.files.length === 0) {
+        emptyState.classList.remove('hidden');
+        exportToolbar.classList.add('hidden');
+        filesListContainer.innerHTML = '';
+        totalItemsCount.textContent = '0';
+        completedItemsCount.textContent = '0';
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      exportToolbar.classList.remove('hidden');
+
+      const completedCount = state.files.filter(f => f.status === 'done').length;
+      totalItemsCount.textContent = state.files.length;
+      completedItemsCount.textContent = completedCount;
+
+      filesListContainer.innerHTML = state.files.map((item, index) => {
+        let statusBadge = '';
+        if (item.status === 'ready') {
+          statusBadge = '<span class="px-2 py-0.5 rounded-full bg-slate-700 text-slate-300 text-[10px] font-bold">Ready</span>';
+        } else if (item.status === 'processing') {
+          statusBadge = '<span class="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[10px] font-bold animate-pulse"><i class="fa-solid fa-spinner fa-spin mr-1"></i> Generating...</span>';
+        } else if (item.status === 'done') {
+          statusBadge = '<span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold"><i class="fa-solid fa-check mr-1"></i> Done</span>';
+        } else if (item.status === 'error') {
+          statusBadge = `<span class="px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 text-[10px] font-bold" title="${item.errorMsg}"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Error: ${item.errorMsg || 'Failed'}</span>`;
+        }
+
+        const topTags = item.keywords.slice(0, 5);
+        const remainingTags = item.keywords.slice(5);
+        const wordCount = item.title ? item.title.split(' ').filter(Boolean).length : 0;
+        const descWordCount = item.description ? item.description.split(' ').filter(Boolean).length : 0;
+
+        return `
+          <div class="bg-slate-900/95 rounded-2xl p-5 border border-slate-800 hover:border-slate-700 transition flex flex-col md:flex-row gap-5 items-start shadow-xl">
+            
+            <div class="w-full md:w-48 h-48 flex-shrink-0 bg-slate-950 rounded-xl border border-slate-800 overflow-hidden relative flex flex-col items-center justify-center p-2 text-center group">
+              ${item.previewUrl ? `
+                <img src="${item.previewUrl}" alt="${item.file.name}" class="max-w-full max-h-full object-contain" />
+                <button onclick="document.getElementById('relink_${item.id}').click()" class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 p-1.5 bg-slate-900/90 hover:bg-cyan-600 text-slate-300 hover:text-white rounded-lg text-[10px] transition border border-slate-700 shadow" title="Replace preview with custom JPG">
+                  <i class="fa-solid fa-image"></i>
+                </button>
+                <input type="file" id="relink_${item.id}" accept="image/*" class="hidden" onchange="attachPreviewToCard('${item.id}', this)" />
+              ` : `
+                <div class="space-y-2 p-2">
+                  <div class="w-12 h-12 mx-auto rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl border border-amber-500/20">
+                    <i class="fa-solid fa-vector-square"></i>
+                  </div>
+                  <p class="text-[11px] font-bold text-slate-200 truncate max-w-[140px]">${item.file.name}</p>
+                  <label class="inline-block px-2.5 py-1 text-[10px] font-bold bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg cursor-pointer transition shadow">
+                    + Link Preview JPG
+                    <input type="file" accept="image/*" class="hidden" onchange="attachPreviewToCard('${item.id}', this)" />
+                  </label>
+                </div>
+              `}
+              <div class="absolute top-2 left-2">${item.fileTypeBadge}</div>
+              <div class="absolute bottom-2 left-2 right-2 bg-black/80 backdrop-blur-xs text-[10px] text-slate-300 px-2 py-1 rounded truncate text-center">
+                ${item.file.name}
+              </div>
+            </div>
+
+            <div class="flex-grow w-full space-y-3.5">
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-slate-400">#${index + 1}</span>
+                  ${statusBadge}
+                  <span class="text-[11px] text-slate-400">(${(item.file.size / 1024).toFixed(1)} KB)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button onclick="generateSingle('${item.id}')" class="px-3 py-1.5 text-xs font-bold bg-cyan-600/30 hover:bg-cyan-600/50 text-cyan-200 border border-cyan-500/40 rounded-lg transition flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-wand-magic-sparkles text-cyan-400"></i> ${item.status === 'done' ? 'Regenerate' : 'Generate'}
+                  </button>
+                  <button onclick="removeFile('${item.id}')" class="p-1.5 text-slate-400 hover:text-rose-400 text-xs rounded-lg transition" title="Delete">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <label class="text-xs font-bold text-slate-300 flex items-center gap-2">
+                    Title <span class="text-[10px] px-1.5 py-0.2 bg-slate-800 text-cyan-300 rounded font-mono">${wordCount} words</span>
+                  </label>
+                  ${item.title ? `
+                    <button onclick="copyText('${escapeQuotes(item.title)}', 'Title copied!')" class="text-[11px] text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+                      <i class="fa-regular fa-copy"></i> Copy Title
+                    </button>
+                  ` : ''}
+                </div>
+                <textarea rows="2" onchange="updateItemTitle('${item.id}', this.value)" placeholder="AI will generate optimized commercial title here..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-xs text-slate-100 focus:outline-none focus:border-cyan-500">${item.title}</textarea>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <label class="text-xs font-bold text-slate-300 flex items-center gap-2">
+                    Description <span class="text-[10px] px-1.5 py-0.2 bg-slate-800 text-purple-300 rounded font-mono">${descWordCount} words</span>
+                  </label>
+                  ${item.description ? `
+                    <button onclick="copyText('${escapeQuotes(item.description)}', 'Description copied!')" class="text-[11px] text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1">
+                      <i class="fa-regular fa-copy"></i> Copy Description
+                    </button>
+                  ` : ''}
+                </div>
+                <textarea rows="2" onchange="updateItemDesc('${item.id}', this.value)" placeholder="AI will generate rich stock description here..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-xs text-slate-300 focus:outline-none focus:border-purple-500">${item.description}</textarea>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+                <div>
+                  <label class="text-[11px] font-bold text-slate-300 block mb-1">Adobe Category</label>
+                  <select onchange="updateItemCategory('${item.id}', this.value)" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-300 focus:outline-none focus:border-cyan-500">
+                    <option value="8" ${item.category == '8' ? 'selected' : ''}>Graphic Resources (Icons/Vectors)</option>
+                    <option value="19" ${item.category == '19' ? 'selected' : ''}>Technology / Video Footage</option>
+                    <option value="3" ${item.category == '3' ? 'selected' : ''}>Business</option>
+                    <option value="12" ${item.category == '12' ? 'selected' : ''}>Lifestyle</option>
+                    <option value="11" ${item.category == '11' ? 'selected' : ''}>Landscapes / Nature / Maps</option>
+                    <option value="13" ${item.category == '13' ? 'selected' : ''}>People</option>
+                    <option value="7" ${item.category == '7' ? 'selected' : ''}>Food</option>
+                  </select>
+                </div>
+
+                <div class="sm:col-span-2 flex justify-end items-end gap-2 pt-2 sm:pt-4">
+                  ${item.keywords.length > 0 ? `
+                    <button onclick="copyKeywords('${item.id}')" class="px-3 py-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-lg transition flex items-center gap-1.5">
+                      <i class="fa-regular fa-copy"></i> Copy Keywords (${item.keywords.length})
+                    </button>
+                    <button onclick="copyAllMeta('${item.id}')" class="px-3.5 py-1.5 text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg transition flex items-center gap-1.5 shadow">
+                      <i class="fa-solid fa-clipboard-check"></i> Copy All
+                    </button>
+                  ` : ''}
+                </div>
+              </div>
+
+              ${item.keywords.length > 0 ? `
+                <div class="space-y-1.5 pt-1">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold text-slate-300">Keywords <span class="text-cyan-400 font-mono">(${item.keywords.length} tags)</span></span>
+                    <span class="text-[10px] text-amber-400 font-semibold">★ First 5 Tags = Highest Ranking Weight</span>
+                  </div>
+
+                  <div class="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto p-2.5 bg-slate-950 rounded-xl border border-slate-800 custom-scrollbar">
+                    ${topTags.map((tag, tIdx) => `
+                      <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold bg-cyan-500/20 text-cyan-200 border border-cyan-500/40">
+                        <span class="text-[10px] text-cyan-400 font-mono">#${tIdx + 1}</span> ${tag}
+                        <button onclick="removeKeyword('${item.id}', ${tIdx})" class="hover:text-rose-400 text-xs ml-1">&times;</button>
+                      </span>
+                    `).join('')}
+                    ${remainingTags.map((tag, rIdx) => `
+                      <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs bg-slate-800/80 text-slate-300 border border-slate-700">
+                        ${tag}
+                        <button onclick="removeKeyword('${item.id}', ${rIdx + 5})" class="hover:text-rose-400 text-xs ml-1">&times;</button>
+                      </span>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function escapeQuotes(str) {
+      if (!str) return '';
+      return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    function removeFile(id) {
+      const idx = state.files.findIndex(f => f.id === id);
+      if (idx !== -1) {
+        if (state.files[idx].previewUrl && state.files[idx].previewUrl.startsWith('blob:')) {
+          URL.revokeObjectURL(state.files[idx].previewUrl);
+        }
+        state.files.splice(idx, 1);
+        renderFiles();
+      }
+    }
+
+    function updateItemTitle(id, val) {
+      const item = state.files.find(f => f.id === id);
+      if (item) item.title = val;
+    }
+
+    function updateItemDesc(id, val) {
+      const item = state.files.find(f => f.id === id);
+      if (item) item.description = val;
+    }
+
+    function updateItemCategory(id, val) {
+      const item = state.files.find(f => f.id === id);
+      if (item) item.category = val;
+    }
+
+    function removeKeyword(itemId, tagIdx) {
+      const item = state.files.find(f => f.id === itemId);
+      if (item) {
+        item.keywords.splice(tagIdx, 1);
+        renderFiles();
+      }
+    }
+
+    async function generateSingle(id) {
+      if (state.apiKeys.length === 0 && parseInputKeys().length === 0) {
+        alert('Please enter and save your Gemini API Key(s) first.');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const item = state.files.find(f => f.id === id);
+      if (!item) return;
+
+      item.status = 'processing';
+      renderFiles();
+
+      try {
+        const result = await callGeminiWithKeyRotationAndModelFallback(item);
+        item.title = result.title;
+        item.description = result.description || result.title;
+        item.keywords = result.keywords;
+        if (result.category) item.category = result.category;
+        item.status = 'done';
+        item.errorMsg = '';
+      } catch (err) {
+        console.error(err);
+        item.status = 'error';
+        item.errorMsg = err.message || 'Failed to generate metadata';
+      }
+      renderFiles();
+    }
+
+    generateAllBtn.addEventListener('click', async () => {
+      if (state.apiKeys.length === 0 && parseInputKeys().length === 0) {
+        alert('Please enter and save your Gemini API Key(s) at the top.');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      if (state.files.length === 0) {
+        alert('Please upload some files first.');
+        return;
+      }
+
+      state.isProcessing = true;
+      generateAllBtn.disabled = true;
+      batchProgressBarContainer.classList.remove('hidden');
+
+      const total = state.files.length;
+      let completed = 0;
+
+      for (let i = 0; i < total; i++) {
+        const item = state.files[i];
+        item.status = 'processing';
+        renderFiles();
+
+        batchProgressText.textContent = `Processing (${i + 1}/${total}): ${item.file.name}`;
+        const pct = Math.round(((i) / total) * 100);
+        batchProgressBar.style.width = `${pct}%`;
+        batchProgressPercent.textContent = `${pct}%`;
+
+        try {
+          const result = await callGeminiWithKeyRotationAndModelFallback(item);
+          item.title = result.title;
+          item.description = result.description || result.title;
+          item.keywords = result.keywords;
+          if (result.category) item.category = result.category;
+          item.status = 'done';
+          item.errorMsg = '';
+        } catch (err) {
+          console.error("Batch error for item:", item.file.name, err);
+          item.status = 'error';
+          item.errorMsg = err.message || 'Failed to generate metadata';
+        }
+        completed++;
+        renderFiles();
+        await new Promise(r => setTimeout(r, 400));
+      }
+
+      batchProgressBar.style.width = `100%`;
+      batchProgressPercent.textContent = `100%`;
+      batchProgressText.textContent = `All ${total} files processed!`;
+      state.isProcessing = false;
+      generateAllBtn.disabled = false;
+      showToast('Batch processing complete!');
+    });
+
+    async function callGeminiWithKeyRotationAndModelFallback(item) {
+      const keysToTry = state.apiKeys.length > 0 ? [...state.apiKeys] : parseInputKeys();
+      if (keysToTry.length === 0) throw new Error('No API keys configured');
+
+      const selectedModel = geminiModel.value || 'gemini-3.6-flash';
+      const modelsToTry = [
+        selectedModel,
+        'gemini-3.6-flash',
+        'gemini-3.1-flash-lite',
+        'gemini-2.0-flash',
+        'gemini-1.5-flash'
+      ];
+      const uniqueModels = [...new Set(modelsToTry)];
+
+      let lastError = null;
+
+      for (let k = 0; k < keysToTry.length; k++) {
+        const apiKey = keysToTry[(state.currentKeyIndex + k) % keysToTry.length];
+
+        for (const model of uniqueModels) {
+          try {
+            const result = await callGeminiVision(item, model, apiKey);
+            state.currentKeyIndex = (state.currentKeyIndex + k + 1) % keysToTry.length;
+            return result;
+          } catch (err) {
+            lastError = err;
+            const errMsg = String(err.message || '').toLowerCase();
+            if (errMsg.includes('429') || errMsg.includes('quota') || errMsg.includes('rate limit')) {
+              console.warn(`Key #${k+1} hit rate limit, rotating to next key in pool...`);
+              break;
+            }
+            if (errMsg.includes('no longer available') || errMsg.includes('not found') || errMsg.includes('404')) {
+              continue;
+            }
+            throw err;
+          }
+        }
+      }
+
+      throw lastError || new Error('All API keys and models in pool failed');
+    }
+
+    async function callGeminiVision(item, model, apiKey) {
+      const platform = targetPlatform.value;
+      const strategy = seoStrategy.value;
+      const targetTitleWords = parseInt(titleWordCountRange.value) || 15;
+      const targetTagCount = parseInt(tagCountRange.value) || 35;
+      const customKeywords = customKeywordsInput.value.trim();
+
+      const modifiers = [];
+      if (modWhiteBg.checked) modifiers.push('isolated on white background');
+      if (modTransparent.checked) modifiers.push('on transparent background');
+      if (modIconSet.checked) modifiers.push('line art outline icon');
+      if (modVector.checked) modifiers.push('vector illustration');
+
+      const modifierText = modifiers.length > 0 ? `Include style modifiers naturally: "${modifiers.join(', ')}"` : '';
+      const customKeyText = customKeywords ? `Mandatory keywords to include: "${customKeywords}"` : '';
+
+      let prompt = '';
+
+      if (item.isVideo) {
+        prompt = `
+You are the World's Leading Adobe Stock Video & Pond5 Top-Seller SEO Specialist.
+The attached image is a 3-Keyframe Sequential Filmstrip (showing Start: 20%, Action/Mid: 50%, End: 85%) of a stock video footage clip.
+
+File Name: ${item.file.name}
+Target Platform: ${platform} Video (Elite Top-Seller SEO Mode)
+Target Title Length: EXACTLY around ${targetTitleWords} words.
+Target Keywords Count: EXACTLY ${targetTagCount} keywords.
+${customKeyText}
+
+=======================================================
+ADOBE STOCK VIDEO TOP-SELLER RULES & ALGORITHM:
+=======================================================
+1. VIDEO TITLE FORMULA:
+   - Construct a natural, high-commercial title:
+     [Exact Subject & Action] + [Camera Motion & Perspective] + [Lighting / Environment / Tone] + [Commercial Application / B-Roll Context]
+   - Example 1: "Green square checkbox animation showing checkmark appearing on transparent background for clean modern user interface UI design video footage"
+   - Example 2: "Liberia country map overlay featuring animated waving national flag over rotating realistic 3D satellite earth globe terrain motion graphic"
+   - Length: around ${targetTitleWords} words.
+
+2. 5-TIER KEYWORD HIERARCHY:
+   - Rank #1 to #5: Exact primary subject, specific action verb, and motion format (e.g., "checkmark", "checkbox", "animation", "motion graphic", "ui design").
+   - Rank #6 to #15: Visual camera/motion details (e.g., "square", "green icon", "smooth transition", "b-roll", "digital interface", "4k resolution", "overlay", "screen element").
+   - Rank #16 to #28: Context & industry terms (e.g., "web development", "mobile app", "approval mark", "success symbol", "technology", "task completion", "user experience").
+   - Rank #29 to ${targetTagCount}: Production synonyms (e.g., "broadcast", "commercial", "footage", "clip", "video template", "element", "digital asset").
+   - Total keyword count MUST BE EXACTLY ${targetTagCount}.
+
+3. VIDEO DESCRIPTION:
+   - 2-3 sentences detailing the sequential progression from Frame 1 to Frame 3 and ideal production use-cases.
+
+4. ADOBE STOCK CATEGORY NUMBER:
+   - 19 for Technology / Motion Graphics / UI Animation
+   - 11 for Landscapes / Nature / Maps / Space
+   - 3 for Business, 12 for Lifestyle.
+
+Return ONLY valid JSON:
+{
+  "title": "Exact descriptive video title here",
+  "description": "Rich 2-3 sentence video footage description here",
+  "keywords": ["tag1", "tag2", "tag3", "tag4", "tag5", ...],
+  "category": "19"
+}
+`;
+      } else {
+        const extractedCue = item.extractedText ? `\nVector Asset Metadata Cues: "${item.extractedText}"` : '';
+
+        prompt = `
+You are the World's #1 Ranked Elite Adobe Stock Contributor & Microstock SEO Specialist.
+Your task is to analyze the provided vector artwork / graphic asset thoroughly and generate elite top-seller metadata strictly adhering to the Adobe Stock Sensei Search Algorithm and buyer search patterns.
+
+File Name: ${item.file.name}
+${extractedCue}
+Target Platform: ${platform} (Elite Top-Seller SEO Mode)
+SEO Strategy: ${strategy}
+Target Title Length: EXACTLY around ${targetTitleWords} words.
+Target Keywords Count: EXACTLY ${targetTagCount} keywords.
+${modifierText}
+${customKeyText}
+
+=======================================================
+ADOBE STOCK TOP-SELLER SEO RULES & ALGORITHM STANDARDS:
+=======================================================
+
+1. COMMERCIAL BUYER-INTENT TITLE FORMULA:
+   - Adobe Stock top sellers NEVER use keyword-stuffed comma lists.
+   - Construct a natural, commercial sentence following this exact winning formula:
+     [Subject / Set Name & Count] + [Specific Visual Style & Artistic Details] + [Theme / Context / Season] + [Isolation / Presentation] + [Commercial Application / Buyer Use-Case]
+   - Example 1 (Reindeer Set): "Set of minimalist Christmas reindeer head silhouettes with festive antlers isolated on white background for winter holiday greeting cards and gift tag design"
+   - Example 2 (Arrow Icons): "Collection of modern outline arrow navigation icons and direction pointers isolated on white background for web and mobile UI interface design"
+   - Example 3 (Floral Badge): "Vintage botanical floral frame badge illustration with delicate branch leaves isolated on white background for wedding invitation design"
+   - Avoid spam words ("best", "quality", "premium", "top seller", "popular", "download now").
+   - Title MUST BE fluent, compelling to buyers, and around ${targetTitleWords} words.
+
+2. 5-TIER KEYWORD HIERARCHY (ORDERED STRICTLY BY SEARCH WEIGHT):
+   Adobe Stock explicitly weights the first 5-10 keywords as having the highest ranking power.
+   Arrange the ${targetTagCount} keywords in this exact descending relevance order:
+   - RANK #1 to #5 (Ultra High-Priority Primary Anchor Terms):
+     The exact literal subject, primary noun, and core object seen in the artwork (e.g., "reindeer", "reindeer antlers", "deer silhouette", "reindeer head", "christmas icon").
+   - RANK #6 to #12 (Artistic Style, Technique & Visual Format):
+     Style and technical attributes (e.g., "vector illustration", "black silhouette", "minimalist line art", "outline icon", "clipart", "isolated on white", "graphic asset").
+   - RANK #13 to #22 (Thematic Context, Holiday, Event & Season):
+     When and why buyers purchase this (e.g., "christmas holiday", "winter season", "new year 2026", "december", "festive celebration", "santa claus", "rudolph", "noel decoration").
+   - RANK #23 to #35 (High Buyer-Intent Commercial Applications):
+     Exact commercial use-cases that convert searches into paid downloads (e.g., "greeting card", "invitation template", "gift wrap", "laser cutting", "craft stencil", "cricut silhouette", "t-shirt graphic", "sticker design", "merchandise print", "embroidery design").
+   - RANK #36 to ${targetTagCount} (Synonyms, Broad Terms & Related Concepts):
+     Secondary discovery keywords and synonyms (e.g., "wildlife", "horned animal", "stag", "buck", "fauna", "nature symbol", "scandinavian decor", "badge", "emblem").
+   - Total keyword count MUST BE EXACTLY ${targetTagCount}. No duplicates.
+
+3. DESCRIPTION (COMMERCIAL BUYER HOOK):
+   - 2-3 professional, informative sentences (35-45 words).
+   - Describe the included elements, clean vector scalability (100% scalable vector EPS/AI), style versatility, and ideal applications for graphic designers, marketers, and crafters.
+
+4. ADOBE STOCK CATEGORY NUMBER:
+   - 8 for Graphic Resources (Icons, vectors, symbols, UI elements, clipart, badges)
+   - 3 for Business / Corporate / Finance
+   - 19 for Technology / UI / Web Design / Code
+   - 11 for Landscapes / Nature / Wildlife / Maps
+   - 12 for Lifestyle / Holidays / Family
+
+Return ONLY valid JSON:
+{
+  "title": "Exact descriptive top-seller title here",
+  "description": "Rich 2-3 sentence commercial description here",
+  "keywords": ["tag1", "tag2", "tag3", "tag4", "tag5", ...],
+  "category": "8"
+}
+`;
+      }
+
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+      const requestParts = [{ text: prompt }];
+      if (item.hasVisualPreview && item.base64) {
+        requestParts.push({
+          inline_data: {
+            mime_type: "image/jpeg",
+            data: String(item.base64)
+          }
+        });
+      }
+
+      const requestBody = {
+        contents: [
+          {
+            parts: requestParts
+          }
+        ],
+        generationConfig: {
+          response_mime_type: "application/json",
+          temperature: 0.2
+        }
+      };
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(requestBody)
+      });
+
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        throw new Error(errData.error?.message || `HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      const responseText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!responseText) throw new Error('Empty response from AI model');
+
+      let parsed;
+      try {
+        parsed = JSON.parse(responseText);
+      } catch (e) {
+        const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          parsed = JSON.parse(jsonMatch[0]);
+        } else {
+          throw new Error('Failed to parse AI JSON response');
+        }
+      }
+
+      return {
+        title: parsed.title || '',
+        description: parsed.description || parsed.title || '',
+        keywords: Array.isArray(parsed.keywords) ? parsed.keywords : [],
+        category: parsed.category ? String(parsed.category) : (item.isVideo ? '19' : '8')
+      };
+    }
+
+    // CSV Exporters
+    exportAdobeCsvBtn.addEventListener('click', () => {
+      const validFiles = state.files.filter(f => f.title && f.keywords.length > 0);
+      if (validFiles.length === 0) {
+        alert('No generated metadata to export.');
+        return;
+      }
+
+      let csvContent = 'Filename,Title,Keywords,Category\n';
+      validFiles.forEach(item => {
+        const filename = escapeCsv(item.file.name);
+        const title = escapeCsv(item.title);
+        const keywords = escapeCsv(item.keywords.join(', '));
+        const category = escapeCsv(item.category || (item.isVideo ? '19' : '8'));
+        csvContent += `"${filename}","${title}","${keywords}","${category}"\n`;
+      });
+
+      downloadCsvFile(csvContent, `AdobeStock_Metadata_${new Date().toISOString().slice(0, 10)}.csv`);
+      showToast('Adobe Stock CSV downloaded!');
+    });
+
+    exportShutterCsvBtn.addEventListener('click', () => {
+      const validFiles = state.files.filter(f => f.title && f.keywords.length > 0);
+      if (validFiles.length === 0) {
+        alert('No generated metadata to export.');
+        return;
+      }
+
+      let csvContent = 'Filename,Description,Keywords,Categories\n';
+      validFiles.forEach(item => {
+        const filename = escapeCsv(item.file.name);
+        const desc = escapeCsv(item.description || item.title);
+        const keywords = escapeCsv(item.keywords.join(', '));
+        const categories = escapeCsv(item.isVideo ? 'Footage/Video' : 'Icons/Symbols');
+        csvContent += `"${filename}","${desc}","${keywords}","${categories}"\n`;
+      });
+
+      downloadCsvFile(csvContent, `Shutterstock_Metadata_${new Date().toISOString().slice(0, 10)}.csv`);
+      showToast('Shutterstock CSV downloaded!');
+    });
+
+    copyAllKeywordsBtn.addEventListener('click', () => {
+      const validFiles = state.files.filter(f => f.keywords.length > 0);
+      if (validFiles.length === 0) {
+        alert('No keywords generated yet.');
+        return;
+      }
+      const text = validFiles.map(f => `[${f.file.name}]\n${f.keywords.join(', ')}`).join('\n\n');
+      navigator.clipboard.writeText(text);
+      showToast('All keywords copied to clipboard!');
+    });
+
+    function escapeCsv(str) {
+      if (!str) return '';
+      return String(str).replace(/"/g, '""');
+    }
+
+    function downloadCsvFile(content, fileName) {
+      const blob = new Blob([content], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', fileName);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }
+
+    function copyText(str, msg = 'Copied!') {
+      navigator.clipboard.writeText(str);
+      showToast(msg);
+    }
+
+    function copyKeywords(id) {
+      const item = state.files.find(f => f.id === id);
+      if (item && item.keywords.length > 0) {
+        navigator.clipboard.writeText(item.keywords.join(', '));
+        showToast('Keywords copied!');
+      }
+    }
+
+    function copyAllMeta(id) {
+      const item = state.files.find(f => f.id === id);
+      if (item) {
+        const text = `Title: ${item.title}\nDescription: ${item.description}\nKeywords: ${item.keywords.join(', ')}\nCategory: ${item.category}`;
+        navigator.clipboard.writeText(text);
+        showToast('All metadata copied!');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 bg-cyan-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-2xl z-50 animate-bounce flex items-center gap-2 border border-cyan-400/30';
+      toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${msg}`;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.remove();
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
